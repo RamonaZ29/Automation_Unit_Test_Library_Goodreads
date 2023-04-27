@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Execution Report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Test Execution Report</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-04-27 14:40:48</p>
+                <p class='attribute'><strong>Duration: </strong>50.18 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 4, Pass: 1, Error: 3</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>scenario1_sign_up_and_login_feature.Sign_up_and_login</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_1_check_create_account_user_exists</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_2_login_into_the_application</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div/a/span/img[@class="circularIcon circularIcon--border"]"}
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F1DCE3+50899]
+	(No symbol) [0x00EAE111]
+	(No symbol) [0x00DB5588]
+	(No symbol) [0x00DE08F9]
+	(No symbol) [0x00DE0AFB]
+	(No symbol) [0x00E0F902]
+	(No symbol) [0x00DFB944]
+	(No symbol) [0x00E0E01C]
+	(No symbol) [0x00DFB6F6]
+	(No symbol) [0x00DD7708]
+	(No symbol) [0x00DD886D]
+	GetHandleVerifier [0x01183EAE+2566302]
+	GetHandleVerifier [0x011B92B1+2784417]
+	GetHandleVerifier [0x011B327C+2759788]
+	GetHandleVerifier [0x00FB5740+672048]
+	(No symbol) [0x00EB8872]
+	(No symbol) [0x00EB41C8]
+	(No symbol) [0x00EB42AB]
+	(No symbol) [0x00EA71B7]
+	BaseThreadInitThunk [0x76B00099+25]
+	RtlGetAppContainerNamedObjectPath [0x77127B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77127B3E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Acer\PycharmProjects\Automation_Unit_Test_Library_Goodreads\scenario1_sign_up_and_login_feature.py", line 72, in test_2_login_into_the_application
+    self.driver.find_element(*self.PROFILE_ICON).click()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 830, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div/a/span/img[@class="circularIcon circularIcon--border"]"}
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F1DCE3+50899]
+	(No symbol) [0x00EAE111]
+	(No symbol) [0x00DB5588]
+	(No symbol) [0x00DE08F9]
+	(No symbol) [0x00DE0AFB]
+	(No symbol) [0x00E0F902]
+	(No symbol) [0x00DFB944]
+	(No symbol) [0x00E0E01C]
+	(No symbol) [0x00DFB6F6]
+	(No symbol) [0x00DD7708]
+	(No symbol) [0x00DD886D]
+	GetHandleVerifier [0x01183EAE+2566302]
+	GetHandleVerifier [0x011B92B1+2784417]
+	GetHandleVerifier [0x011B327C+2759788]
+	GetHandleVerifier [0x00FB5740+672048]
+	(No symbol) [0x00EB8872]
+	(No symbol) [0x00EB41C8]
+	(No symbol) [0x00EB42AB]
+	(No symbol) [0x00EA71B7]
+	BaseThreadInitThunk [0x76B00099+25]
+	RtlGetAppContainerNamedObjectPath [0x77127B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77127B3E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 1, Error: 1 -- Duration: 25.73 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>scenario2_search_book_and_add_review.Search_book</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_add_review_to_book</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class="searchBox__input searchBox__input--navbar"]"}
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F1DCE3+50899]
+	(No symbol) [0x00EAE111]
+	(No symbol) [0x00DB5588]
+	(No symbol) [0x00DE08F9]
+	(No symbol) [0x00DE0AFB]
+	(No symbol) [0x00E0F902]
+	(No symbol) [0x00DFB944]
+	(No symbol) [0x00E0E01C]
+	(No symbol) [0x00DFB6F6]
+	(No symbol) [0x00DD7708]
+	(No symbol) [0x00DD886D]
+	GetHandleVerifier [0x01183EAE+2566302]
+	GetHandleVerifier [0x011B92B1+2784417]
+	GetHandleVerifier [0x011B327C+2759788]
+	GetHandleVerifier [0x00FB5740+672048]
+	(No symbol) [0x00EB8872]
+	(No symbol) [0x00EB41C8]
+	(No symbol) [0x00EB42AB]
+	(No symbol) [0x00EA71B7]
+	BaseThreadInitThunk [0x76B00099+25]
+	RtlGetAppContainerNamedObjectPath [0x77127B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77127B3E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Acer\PycharmProjects\Automation_Unit_Test_Library_Goodreads\scenario2_search_book_and_add_review.py", line 90, in test_add_review_to_book
+    self.driver.find_element(*self.SEARCH_BAR).click() #b'
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 830, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class="searchBox__input searchBox__input--navbar"]"}
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F1DCE3+50899]
+	(No symbol) [0x00EAE111]
+	(No symbol) [0x00DB5588]
+	(No symbol) [0x00DE08F9]
+	(No symbol) [0x00DE0AFB]
+	(No symbol) [0x00E0F902]
+	(No symbol) [0x00DFB944]
+	(No symbol) [0x00E0E01C]
+	(No symbol) [0x00DFB6F6]
+	(No symbol) [0x00DD7708]
+	(No symbol) [0x00DD886D]
+	GetHandleVerifier [0x01183EAE+2566302]
+	GetHandleVerifier [0x011B92B1+2784417]
+	GetHandleVerifier [0x011B327C+2759788]
+	GetHandleVerifier [0x00FB5740+672048]
+	(No symbol) [0x00EB8872]
+	(No symbol) [0x00EB41C8]
+	(No symbol) [0x00EB42AB]
+	(No symbol) [0x00EA71B7]
+	BaseThreadInitThunk [0x76B00099+25]
+	RtlGetAppContainerNamedObjectPath [0x77127B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77127B3E+238]
+
+C:\Users\Acer\PycharmProjects\Automation_Unit_Test_Library_Goodreads\scenario2_search_book_and_add_review.py:34: DeprecationWarning: executable_path has been deprecated, please pass in a Service object
+  self.driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_search_and_add_book_to_wish_list</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class="searchBox__input searchBox__input--navbar"]"}
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F1DCE3+50899]
+	(No symbol) [0x00EAE111]
+	(No symbol) [0x00DB5588]
+	(No symbol) [0x00DE08F9]
+	(No symbol) [0x00DE0AFB]
+	(No symbol) [0x00E0F902]
+	(No symbol) [0x00DFB944]
+	(No symbol) [0x00E0E01C]
+	(No symbol) [0x00DFB6F6]
+	(No symbol) [0x00DD7708]
+	(No symbol) [0x00DD886D]
+	GetHandleVerifier [0x01183EAE+2566302]
+	GetHandleVerifier [0x011B92B1+2784417]
+	GetHandleVerifier [0x011B327C+2759788]
+	GetHandleVerifier [0x00FB5740+672048]
+	(No symbol) [0x00EB8872]
+	(No symbol) [0x00EB41C8]
+	(No symbol) [0x00EB42AB]
+	(No symbol) [0x00EA71B7]
+	BaseThreadInitThunk [0x76B00099+25]
+	RtlGetAppContainerNamedObjectPath [0x77127B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77127B3E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Acer\PycharmProjects\Automation_Unit_Test_Library_Goodreads\scenario2_search_book_and_add_review.py", line 61, in test_search_and_add_book_to_wish_list
+    self.driver.find_element(*self.SEARCH_BAR).click() #b'
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 830, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Acer\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class="searchBox__input searchBox__input--navbar"]"}
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F1DCE3+50899]
+	(No symbol) [0x00EAE111]
+	(No symbol) [0x00DB5588]
+	(No symbol) [0x00DE08F9]
+	(No symbol) [0x00DE0AFB]
+	(No symbol) [0x00E0F902]
+	(No symbol) [0x00DFB944]
+	(No symbol) [0x00E0E01C]
+	(No symbol) [0x00DFB6F6]
+	(No symbol) [0x00DD7708]
+	(No symbol) [0x00DD886D]
+	GetHandleVerifier [0x01183EAE+2566302]
+	GetHandleVerifier [0x011B92B1+2784417]
+	GetHandleVerifier [0x011B327C+2759788]
+	GetHandleVerifier [0x00FB5740+672048]
+	(No symbol) [0x00EB8872]
+	(No symbol) [0x00EB41C8]
+	(No symbol) [0x00EB42AB]
+	(No symbol) [0x00EA71B7]
+	BaseThreadInitThunk [0x76B00099+25]
+	RtlGetAppContainerNamedObjectPath [0x77127B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77127B3E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 0, Error: 2 -- Duration: 24.45 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
